@@ -1,6 +1,6 @@
 //api link and key
-const BASE_URL1 = "http://api.openweathermap.org/geo/1.0/direct";
-const BASE_URL2 = "http://api.openweathermap.org/data/2.5/air_pollution?";
+const BASE_URL1 = "https://api.openweathermap.org/geo/1.0/direct";
+const BASE_URL2 = "https://api.openweathermap.org/data/2.5/air_pollution?";
 const API_KEY = "86b45f687ae884df5bd00b293094f375";
 let limit = 1;
 
