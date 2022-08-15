@@ -15,6 +15,7 @@ let output5 = document.getElementById('output5');
 let output6 = document.getElementById('output6');
 let output7 = document.getElementById('output7');
 let output8 = document.getElementById('output8');
+let output9 = document.getElementById('output9');
 
 //api 1 variables
 let userInput = '';
@@ -46,10 +47,14 @@ button.onclick = function (event) {
 
         .then(function (data) {
             console.log(data);
+
             cityName = data[0].name;
             latitude = data[0].lat;
             longitude = data[0].lon;
-            output1.innerHTML = cityName
+
+            output1.innerHTML = 'City: ' + cityName
+            output2.innerHTML = 'Coordinates: ' + latitude + ', ' + longitude
+
             getAirData();
         })
 
@@ -89,21 +94,21 @@ function webResponse(data) {
     sulpherdioxide = data.list[0].components.so2;
     ammonia = data.list[0].components.nh3;
 
-    output2.innerHTML = 'Air Quality Index: ' + aqi;
-    output3.innerHTML = 'Nitrogen Monoxide Levels: ' + nitrogenmonoxide;
-    output4.innerHTML = 'Nitrogen Dioxide Levels: ' + nitrogendioxide;
-    output5.innerHTML = 'Carbon Monoxide Levels: ' + carbonmonoxide;
-    output6.innerHTML = 'Sulpher Dioxide Levels: ' + sulpherdioxide;
-    output7.innerHTML = 'Ammonia Levels: ' + ammonia;
-    output8.innerHTML = 'Ozone Levels: ' + ozone;
+    output3.innerHTML = 'Air Quality Index: ' + aqi;
+    output4.innerHTML = 'Nitrogen Monoxide Levels: ' + nitrogenmonoxide;
+    output5.innerHTML = 'Nitrogen Dioxide Levels: ' + nitrogendioxide;
+    output6.innerHTML = 'Carbon Monoxide Levels: ' + carbonmonoxide;
+    output7.innerHTML = 'Sulpher Dioxide Levels: ' + sulpherdioxide;
+    output8.innerHTML = 'Ammonia Levels: ' + ammonia;
+    output9.innerHTML = 'Ozone Levels: ' + ozone;
 
     if (aqi == 1 || aqi == 2) {
-        output2.style.color = 'green';
+        output3.style.color = 'green';
     }
     else if (aqi == 3) {
-        output2.style.color = 'orange';
+        output3.style.color = 'orange';
     }
     else if (aqi == 4 || aqi == 5) {
-        output2.style.color = 'red';
+        output3.style.color = 'red';
     }
 }
