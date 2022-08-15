@@ -100,11 +100,10 @@ function webResponse(data) {
     if (aqi == 1 || aqi == 2) {
         output2.style.color = 'green';
     }
-    if (aqi == 3) {
-        aqi.style.color = 'yellow';
+    else if (aqi == 3) {
+        output2.style.color = 'orange';
     }
-
-    if (aqi == 4 || aqi == 5) {
-        aqi.style.color = 'red';
+    else if (aqi == 4 || aqi == 5) {
+        output2.style.color = 'red';
     }
 }
