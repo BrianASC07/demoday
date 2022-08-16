@@ -1,4 +1,100 @@
 .all_text{
     text-align: center;
+
+}
+.definition {
+    border: solid 5px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
+.airdata {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background-image: url("https://www.breeze-technologies.de/wp-content/uploads/2019/06/holger-link-748973-unsplash-1030x687.jpg");
+}
+
+#heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+#filler {
+    width: 5%;
+}
+
+#logo {
+    width: 5%;
+    height: 5%;
+}
+
+h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+
+}
+
+#label1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button {
+    width: 40%;
+    height: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 35px;
+    border-color: rgba(0, 0, 0, 0.378);
+    background-color: rgba(216, 250, 239, 0.564);
+}
+
+.button:hover {
+    width: 40%;
+    height: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 35px;
+    border-color: rgba(0, 0, 0, 0.378);
+    background-color: rgba(152, 188, 177, 0.556);
+}
+
+#inputform {
+    width: 30%;
+    margin: 0 auto;
+    background-color: rgba(240, 248, 255, 0.697);
+    padding-bottom: 10px;
+    padding-top: 5px;
+    border-radius: 35px;
+    display: block;
+}
+
+input {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 35px;
+    border-color: rgba(0, 0, 0, 0.378);
+    background-color: rgba(216, 250, 239, 0.315);
+}
+
+#datadiv {
+    display: none;
+    background-color: rgba(216, 250, 239, 0.315);
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 35px;
+    border-color: rgba(0, 0, 0, 0.378);
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+.main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}

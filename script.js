@@ -7,6 +7,7 @@ let limit = 1;
 //html elements
 let input = document.querySelector('input');
 let button = document.getElementById('enter');
+let button2 = document.getElementById('back');
 let output1 = document.getElementById('output1');
 let output2 = document.getElementById('output2');
 let output3 = document.getElementById('output3');
@@ -16,6 +17,8 @@ let output6 = document.getElementById('output6');
 let output7 = document.getElementById('output7');
 let output8 = document.getElementById('output8');
 let output9 = document.getElementById('output9');
+let inputform = document.getElementById('inputform');
+let datadiv = document.getElementById('datadiv');
 
 //api 1 variables
 let userInput = '';
@@ -86,6 +89,9 @@ function getAirData() {
 function webResponse(data) {
     console.log(data)
 
+    datadiv.style.display = 'block';
+    inputform.style.display = 'none';
+
     aqi = data.list[0].main.aqi;
     nitrogenmonoxide = data.list[0].components.no;
     nitrogendioxide = data.list[0].components.no2;
@@ -111,4 +117,9 @@ function webResponse(data) {
     else if (aqi == 4 || aqi == 5) {
         output3.style.color = 'red';
     }
+}
+
+button2.onclick = function () {
+    datadiv.style.display = 'none';
+    inputform.style.display = 'block';
 }

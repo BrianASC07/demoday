@@ -9,27 +9,43 @@
 </head>
 <body>
     <div class="all_text">
-        <h1>Air Pollution</h1>
-        <div>
-            <form id="input">
-                <input type="text">
-            </form>
-            <button id="enter">Enter</button>
+        <div id="heading">
+            <img src="images/logo.jpg" id="logo">
+            <h1>Air Pollution</h1>
+            <p id="filler"></p>
         </div>
-        <div>
-            <p id="output1"></p>
-            <p id="output2"></p>
-            <p id="output3"></p>
-            <p id="output4"></p>
-            <p id="output5"></p>
-            <p id="output6"></p>
-            <p id="output7"></p>
-            <p id="output8"></p>
-            <p id="output9"></p>
+        <div id="inputform">
+            <form id="input">
+                <p id="label1">Enter the Name of Any City!</p>
+                <input type="text" placeholder="ex. Shanghai, NYC">
+            </form>
+            <br>
+            <button class="button" id="enter">View Air Data</button>
+        </div>
+        <div id="datadiv">
+            <p id="output1" class="main"></p>
+            <p id="output2" class="main"></p>
+            <p id="output3" class="main"></p>
+            <p id="output4" class="airdata"></p>
+            <p id="output5" class="airdata"></p>
+            <p id="output6" class="airdata"></p>
+            <p id="output7" class="airdata"></p>
+            <p id="output8" class="airdata"></p>
+            <p id="output9" class="airdata"></p>
+            <button class="button" id="back">Search More Cities</button>
         </div>
     </div>
-    <p id="definition">Air Quailty Index (AQI) measures air quality and informs you of the 
-        health effects associated with polluted air.</p>
+    <p class="definition">Air Quailty Index (AQI) measures air quality and informs you of the 
+        health effects associated with polluted air.A right AQI would be a one, an ok one would be 2, a reasonable one would be a 3, and a negative one would be 4, and a terrible one would be 5.</p>
+        <p class="definition">Nitrogen monoxide is a gas that can pollute and if too much is in the air it can lead to 
+            harmful things like acid rain if too much is in the air.</p>
+            <p class="definition">Nitrogen Dioxide is a reddish brown poisonus gas and is a air pollutant.Too much in the air
+            can lead to visibilty issues and also cause acid rain. </p>
+            <p class="definition">Carbon monoxide is a very well known gas and it is known to be an odorless, highly poisonous, tasteless, and flammable gas. </p>
+                <p class="definition">Sulfur dioxide is colorless toxic gas creating by burning sulfur but there is not a lot in the atomosphere of earth since it can
+                    only be created by burning sulfur but it can still be very dangerous to be around it. </p>
+                <p class="definition">Ammonia is a very toxic chemical that can sometimes be found in the air and it's corrosive to the skin and eyes, cause lung injury 
+                    and hurt respiratory system if there's long term exposure. </p>
     <script src="script.js"></script>
 </body>
 </html>
