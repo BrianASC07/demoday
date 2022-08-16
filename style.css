@@ -3,8 +3,9 @@
 
 }
 .definition {
-    border: solid 5px;
+    border: solid 3px;
     font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 
 .airdata {

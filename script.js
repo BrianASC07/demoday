@@ -28,6 +28,7 @@ let cityName = '';
 
 //api 2 variables
 let aqi = '';
+let quality = 'test';
 let nitrogendioxide = '';
 let ozone = '';
 let carbonmonoxide = '';
@@ -100,7 +101,20 @@ function webResponse(data) {
     sulpherdioxide = data.list[0].components.so2;
     ammonia = data.list[0].components.nh3;
 
-    output3.innerHTML = 'Air Quality Index: ' + aqi;
+    if (aqi == 1 || aqi == 2) {
+        quality = ' (Good)'
+        output3.style.color = 'green';
+    }
+    else if (aqi == 3) {
+        output3.style.color = 'orange';
+        quality = ' (Moderate)'
+    }
+    else if (aqi == 4 || aqi == 5) {
+        output3.style.color = 'red';
+        quality = ' (Poor)'
+    }
+
+    output3.innerHTML = 'Air Quality Index: ' + aqi + quality;
     output4.innerHTML = 'Nitrogen Monoxide Levels: ' + nitrogenmonoxide;
     output5.innerHTML = 'Nitrogen Dioxide Levels: ' + nitrogendioxide;
     output6.innerHTML = 'Carbon Monoxide Levels: ' + carbonmonoxide;
@@ -108,15 +122,6 @@ function webResponse(data) {
     output8.innerHTML = 'Ammonia Levels: ' + ammonia;
     output9.innerHTML = 'Ozone Levels: ' + ozone;
 
-    if (aqi == 1 || aqi == 2) {
-        output3.style.color = 'green';
-    }
-    else if (aqi == 3) {
-        output3.style.color = 'orange';
-    }
-    else if (aqi == 4 || aqi == 5) {
-        output3.style.color = 'red';
-    }
 }
 
 button2.onclick = function () {
